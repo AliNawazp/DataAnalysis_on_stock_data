@@ -46,8 +46,8 @@ def Analysis_on_Nifty():
         with col1:
             st.write("PDF of {}".format(option))
             fig,ax = plt.subplots()
-            sns.distplot(df_nifty[option])
-            st.pyplot(fig)
+            #sns.distplot(df_nifty[option])
+            #st.pyplot(fig)
         with col2:
             st.write("CDF of {}".format(option))
             fig,ax = plt.subplots()

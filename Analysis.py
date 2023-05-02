@@ -46,7 +46,7 @@ def Analysis_on_Nifty():
         with col1:
             st.write("PDF of {}".format(option))
             fig,ax = plt.subplots()
-            plt.hist(df_nifty[option])
+            plt.hist(df_nifty[option],density=True) #sns.displot(df_sunsex[option]) this we can use
             st.pyplot(fig)
         with col2:
             st.write("CDF of {}".format(option))
@@ -266,8 +266,8 @@ def Analysis_on_Sunsex():
         with col1:
             st.write("PDF of {}".format(option))
             fig,ax = plt.subplots()
-            #sns.distplot(df_sunsex[option])
-            #st.pyplot(fig)
+            plt.hist(df_sunsex[option],density=True) #sns.displot(df_sunsex[option]) this we can use
+            st.pyplot(fig)
         with col2:
             st.write("CDF of {}".format(option))
             fig,ax = plt.subplots()

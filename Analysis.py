@@ -266,8 +266,8 @@ def Analysis_on_Sunsex():
         with col1:
             st.write("PDF of {}".format(option))
             fig,ax = plt.subplots()
-            sns.distplot(df_sunsex[option])
-            st.pyplot(fig)
+            #sns.distplot(df_sunsex[option])
+            #st.pyplot(fig)
         with col2:
             st.write("CDF of {}".format(option))
             fig,ax = plt.subplots()
